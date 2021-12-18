@@ -15,7 +15,6 @@ num_topics = 10
 
 #%% Initial Load
 tweet_df = pd.read_csv("/Data/training.1600000.processed.noemoticon.csv",encoding='latin-1',names=['target','ids','date','flag','user','text'])
-
 #%% Tokenization
 tweet_df['text'] = tweet_df['text'].astype(str)
 tweet_df['tokens'] = tweet_df['text'].apply(lambda x: preprocess_string(x))

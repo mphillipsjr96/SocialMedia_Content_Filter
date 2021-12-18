@@ -13,9 +13,8 @@ from gensim.parsing.preprocessing import preprocess_string, STOPWORDS
 from gensim.models.phrases import Phrases, Phraser
 
 #%% Data Loading
-tweets_df = pd.read_csv('D:/Documents/Python/Data/full_tweets_umich.csv')
+tweets_df = pd.read_csv('/Data/full_tweets_umich.csv')
 
-script_tweets = tweets_df[8000000:]
 #%% Language Detection
 langs = []
 for row in tqdm(script_tweets['text']):
@@ -33,7 +32,6 @@ script_tweets.to_csv('D:/Documents/Python/Data/full_tweets_umich_'+str(script)+'
 
 tweets_df_lang = pd.read_csv('D:/Documents/Python/Data/full_tweets_umich_1.csv')
 tweets_df_lang = tweets_df_lang.append(pd.read_csv('D:/Documents/Python/Data/full_tweets_umich_9.csv'))
-
 tweets_df_lang_en = tweets_df_lang[tweets_df_lang['lang']=='en']
 tweets_df_lang_en.drop('Unnamed: 0',inplace=True,axis=1)
 tweets_df_lang_en.to_csv('D:/Documents/Python/Data/en_tweets_umich.csv')

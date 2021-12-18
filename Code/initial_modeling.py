@@ -25,7 +25,7 @@ import pickle
 RANDOM_SEED = 42
 
 #%% Load Data
-tweet_df = pd.read_csv('D:/Documents/Python/Data/bigram_tweet_df.csv')
+tweet_df = pd.read_csv('/Data/bigram_tweet_df.csv')
 y = tweet_df['target']
 X = tweet_df['text']
 X_train,X_test,y_train,y_test = train_test_split(X,y,random_state=RANDOM_SEED)
@@ -39,7 +39,7 @@ text_clf_mnb = Pipeline([('vect', CountVectorizer(stop_words='english',ngram_ran
 text_clf_mnb = text_clf_mnb.fit(X_train[:cut],y_train[:cut])
 
 #%% MultinomialNB Performance
-
+pickle.dump('text_clf_mnb')
 predicted_mnb = text_clf_mnb.predict(X_test)
 pred_probs_mnb = text_clf_mnb.predict_proba(X_test)
 accuracy_score_mnb = accuracy_score(y_test,predicted_mnb) #76%

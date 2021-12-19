@@ -7,6 +7,10 @@ initial_cleaning.py - Script for taking the training.16000000.processed.noemotic
 <br>initial_modeling.py - Script for the sentiment modeling
 <br>preprocessing_script.py - Script for preprocessing the tweets, word filtering takes place here too
 <br>topic_modeling.py - Script for topic modeling (Unfinished - not used in final extension)
+<br>Capstone_Glove_Word_Embeddings.ipynb - Exploration of GloVE word vectors for classification
+<br>Capstone_Fasttext_Word_Embeddings.ipynb - Exploration of fasttext word vectors for classification
+<br>Tweet_Extraction_from_UMich_Tweets.ipynb - Extracting test set from random sample of tweets provided by UMSI
+<br>Capstone_LinearSVC_Model_Eval.ipynb - Evaluate LinearSVC model on test set derived from UMSI tweet sample
 <br>
 <h3>Data</h3>
 bigram_tweet_df.csv - Cut dataset containing tweets

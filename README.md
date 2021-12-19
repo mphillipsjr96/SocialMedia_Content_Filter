@@ -17,6 +17,8 @@ bigram_tweet_df.csv - Cut dataset containing tweets
 <br>training.1600000.processed.noemoticon.csv - Cut dataset containing tokenized tweets
 <br>thesaurus.json - The original thesaurus file
 <br>thesaurus_lem.json - The lemmatized thesaurus file
+<br>sampled_tweets.csv - Tweets sampled from UMSI tweets using VADER algorithm for preliminary sentiment labeling
+<br>cleaned_human_responses.csv - Modified version of sampled_tweets with human labeling added
 <br>
 <h3>Models</h3>
 LinearSVCModel.sav - Linear SVC Model Pickle

@@ -1,5 +1,5 @@
 # SocialMedia_Content_Filter
-Backend for a Chrome Extension that will filter social media content based on sentiment and users' choice filter words. This repository contains the models and scripts used to create the models. The extension itself can be found  <a href='https://github.com/drkinder/content-filter-chrome-extension'>here</a>.
+Backend for a Chrome Extension that will filter social media content based on sentiment and users' choice filter words. This repository contains the models and scripts used to create the models. The extension itself can be found  <a href='https://github.com/drkinder/content-filter-chrome-extension'>here</a>. The API repository can be found <a href='https://github.com/drkinder/content-filter-api'>here</a>.
 <br>
 <h2>Folders</h2>
 <h3>Code</h3>
